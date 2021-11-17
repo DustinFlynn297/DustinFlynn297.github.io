@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&display=swap');
+@import url("https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css");
+/*!-------------------------------------------------------------------------------------------------------- */
+/**-------------------------------------------------------------------------------------------------------- */
+/*? CSS RESET */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+}
+
+body{
+  font-size: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  margin: 10px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+section{
+  width: 100%;
+  float: left; 
+  /* height: 100vh; */
+  position: relative;
+}
+
+/*? SCROLLBAR */
+::-webkit-scrollbar {
+  width: 16px;
+}
+::-webkit-scrollbar-track {
+  background-color:#CAD2C5;
+  opacity: 60%;
+}
+::-webkit-scrollbar-thumb {
+  background-color:#cad3c57e;
+  border-radius: 100px;
+}
+
+/*!-------------------------------------------------------------------------------------------------------- */
+/**-------------------------------------------------------------------------------------------------------- */
+/*? MAIN STYLING - UTILITY CLASSES */
+.container {
+  margin: auto;
+  max-width: 1100px;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+#home, #projects, #about, #contact{
+  background-color: #103c55;
+}
+
+#projects h1, #about h1, #contact h1{
+  text-align: center;
+  margin-top: 80px;
+  color:#CAD2C5;
+}
+/* COLORS:  2F3E46 - 354F52 - 52796F - 84A98C - CAD2C5  */
+.bg-color {
+  background-color: #3c6074;
+}
+
+.text-primary {
+  color: #CAD2C5;
+}
+
+.text-secondary {
+  color: #243949;
+}
+
+.text-tertiary {
+  color: #CAD2C5;
+}
+
+.text-soft {
+  color: #d7d8d6;
+  opacity: 60%;
+}
+/* TEXT SIZING */
+.main-title {
+  font-size: 4.2rem;
+  font-family: 'Playfair Display', serif;
+  color: #CAD2C5;
+  text-decoration: underline;
+}
+
+.sub-title {
+  font-size: 3rem;
+  color: #CAD2C5;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+}
+
+.small-text {
+  font-size: 1rem;
+  color: #CAD2C5;
+  opacity: 60%;
+  font-weight: 400;
+}
+/* TEXT ALIGNMENT */
+.text-center {
+  text-align:center;
+}
+
+.text-left {
+  text-align:left;
+}
+/* PADDING */
+.py-1 { padding: 10px 0; }
+.py-2 { padding: 20px 0; }
+.py-3 { padding: 30px 0; }
+/* CLEAR */
+.clr {
+  clear: both;
+}
+/*!-------------------------------------------------------------------------------------------------------- */
+/**-------------------------------------------------------------------------------------------------------- */
+/*? NAVBAR  */
+#navbar {
+  display: flex;
+  position: sticky;
+  top:0;
+  background: #486474;
+  color: #fff;
+  justify-content: space-between;
+  z-index: 1;
+  padding: 0.30rem;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar ul li a {
+  color:#CAD2C5;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+  font-size: 20px;
+}
+
+#navbar ul li a:hover {
+  color:#609bb6;
+}
+
+#navbar .logo, ul li a{
+  font-weight: 200;
+  padding-left: 10px;
+}
+
+header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+}
+/*!-------------------------------------------------------------------------------------------------------- */
+/**-------------------------------------------------------------------------------------------------------- */
+/*? HOME - SHOWCASE */
+
+#home{
+  height: 90vh;
+  text-align: center;
+  display: grid;
+  place-content: center;
+}
+
+#home h1{
+  /* position: absolute; */
+  /* top: 50%; */
+  /* transform: translate(-50%, -50%); */
+  /* padding: 2rem; */
+  margin-bottom: 0.1rem;
+  color: #CAD2C5;
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+}
+
+#home h3 {
+  font-weight: 100;
+  padding-bottom: 0rem;
+}
+
+#home p {
+  padding-top: 0.1rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+}
+
+.text-above-title{
+  /* transform: translate(-50%, -50%); */
+  font-family: 'Montserrat', sans-serif;
+
+
+  
+}
+
+.text-below-title{
+  font-size: 2rem;
+  max-width: 600px;
+}
+/*!-------------------------------------------------------------------------------------------------------- */
+/**-------------------------------------------------------------------------------------------------------- */
+/*? PROJECTS/SKILL BREAKDOWN */
+#projects h2, #projects h3, #projects p {
+  margin-top: 15px;
+  text-align: center;
+  max-width: 520px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.skills-text {
+  font-weight: 450;
+  line-height: 1.5;
+}
+
+#projects h3 i {
+  padding: 0.50rem;
+  color:#8493a9;
+  font-size: 4rem;
+}
+
+/*!-------------------------------------------------------------------------------------------------------- */
+/**-------------------------------------------------------------------------------------------------------- */
+/*? PROJECT */
+#project-items a {
+  text-decoration: none;
+  color:#103c55;
+}
+
+#project-items a:hover {
+  color:#CAD2C5;
+}
+
+.project-desc, .project-info {
+  font-weight: 300;
+  align-items: center;
+  justify-content: center;
+}
+
+#project-items h3 {
+  text-align: center;
+  font-weight: 400;
+}
+
+#project-items p {
+  font-size: 1.5rem;
+  text-align: center;
+  padding-bottom: 1.2rem;
+}
+
+.project-content {
+  display: block;
+  overflow: auto;
+  float: center;
+  width: 50%;
+}
+/*!-------------------------------------------------------------------------------------------------------- */
+/**-------------------------------------------------------------------------------------------------------- */
+/*? ABOUT */
+#about {
+  height: 120vh;
+}
+
+#about p {
+  font-weight: 300;
+  font-size: 2.1rem;
+}
+/*!-------------------------------------------------------------------------------------------------------- */
+/**-------------------------------------------------------------------------------------------------------- */
+/*? CONTACT */
+#contact .box {
+  float: left;
+  width: 33.3%;
+  padding: 15px;
+  text-align:center;
+}
+
+#contact h2 {
+  padding-bottom: 2rem;
+}
+
+.icon-color {
+  color: #CAD2C5;
+}
+
+#contact i:hover {
+  color: #60b672;
+}
+
+.box i {
+  margin-bottom: 2px;
+}
+/*!-------------------------------------------------------------------------------------------------------- */
+/**-------------------------------------------------------------------------------------------------------- */
+/*? FOOTER */
+.main-footer {
+  text-align: center;
+  background-color: #2F3E46;
+  padding: 10px;
+  font-weight: 150;
+}

@@ -2,80 +2,154 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dustin Flynn, St. Louis developer portfolio">
-    <meta name="keywords" content="dustin, flynn, dustin flynn, portfolio, developer, software engineer">
-    <meta name="author" content="Dustin">
-    <title>Dustin Flynn's Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles/styles.css"   
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <!-- link style css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="app.css">
+    <!-- link icons for contact -->
+    <script src="https://kit.fontawesome.com/572cc1dd20.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+    <title>DF | Portfolio</title>
 </head>
-    <body>
-        
-    <div class="topnav">
-      <a href="#home" class="active">Home</a>
-      <div id="myLinks">
-        <a href="#about_me">About Me</a>
-        <a href="#contact">Contact</a>
-        <a href="#projects">Projects</a>
-      </div>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
+<body>
     
-    <div id="about_me">
-      <h3>Hi, my name is Dustin Flynn <img src="images/Emoji.gif" alt="Dustin Flynn"></h3>
-      <p>Junior Software Developer born and raised in Saint Louis, Missouri. </p>      
-      <p>My hobbies include volleyball, weight lifting and hiking. </p>
+    <!--? NavBar -->
+    <nav id="navbar">
+        <h1 class="logo">
+          <span class="text-primary">
+            DF | Dustin Flynn
+          </span>
+        </h1>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!--? Home/Showcase  -->
+    <section id="home" class="py-3">
+        <div class="container">
+            <h3 class="text-above-title text-tertiary">Hi, my name is</h3>
+            <h1 class="main-title">Dustin Flynn</h1>
+            <p class="text-below-title text-soft">
+                    I am a Full Stack Software Engineer with a passion for learning. I'm always looking for my next opportunity to learn something new.
+            </p>
+        </div>
+    </section>
 
-        
-    </div>
-
-    <div id="projects">
-        <h3>Projects</h3>
-        <p>
-          <span>
-            <div>  
-              <p>Title 1
+    <!--? Projects & Skills Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="skills">                
+                <h1 class="sub-title text-center">Skills</h1>
+                <h3 class="tertiary-color">
+                    <i class="devicon-python-plain-wordmark"></i>
+                    <i class="devicon-django-plain"></i>
+                    <i class="devicon-csharp-plain"></i>
+                    <i class="devicon-dot-net-plain-wordmark"></i>
+                    <i class="devicon-dotnetcore-plain"></i>
+                    <i class="fas fa-database"></i>
+                    <i class="devicon-javascript-plain"></i>
+                    <i class="devicon-react-original-wordmark"></i>
+                    <i class="devicon-html5-plain-wordmark"></i>
+                    <i class="devicon-css3-plain-wordmark"></i>
+                    <i class="devicon-github-original-wordmark"></i>
+                    <i class="devicon-git-plain-wordmark"></i>
+                </h3>
                 <br>
-                Link
-                <br>  
-              </p>
-            </div>
-          </span>
-
-          <span>
-            <div>
-              <p>Title 2 <br>
-              Link</p>
-            </div>
-          </span>
-
-          <span>
-            <div>  
-              <p>Title 3
                 <br>
-                Link
-                <br>  
-              </p>
+    </section>
+    
+
+    <!--? Project Breakdown  only pick 3/3 -->
+    <!-- todo: add demos and improve readme -->
+    <section id="project-items" class="bg-color py-3">
+        <div class="container">
+            <div class="projects-content">
+                <h1 class="main-title text-center">My Projects</h1>
+                <br>                
+                <h2 class="sub-title text-center">Trash Collector</h2>
+                    <h3 class="project-info text-tertiary">
+                        Python | Django |
+                        <a href="https://github.com/DustinFlynn297/TrashCollector.git">GitHub Link</a>
+                    </h3>
+                    <p class="project-desc text-soft">
+                        A Django paired programming project that helped me understand how to integrate Google Maps and Stripe Payment API. This project also helped solidify how to create views, test URL endpoints and CRUD functionality.
+                    </p>
+                <h2 class="sub-title text-center">Soda Machine</h2>
+                    <h3 class="project-info text-tertiary">
+                        Python |
+                        <a href="https://github.com/DustinFlynn297/Soda-Machine.git">
+                            GitHub Link
+                        </a>
+                    </h3>
+                    <p class="project-desc text-soft">
+                        A python terminal that acts as a soda machine.  This was a pair programming project where we received a completed codebase with over thirty bugs and had to step through it and figure out where the issues in the code were.  
+                    </p>
+                <h2 class="sub-title text-center">Most Wanted</h2>
+                    <h3 class="project-info text-tertiary">
+                        JavaScript |
+                        <a href="https://github.com/DustinFlynn297/Most-Wanted.git">
+                            GitHub Link
+                        </a>
+                    </h3>
+                    <p class="project-desc text-soft">
+                        A console application that simulates searching through a database for individuals. This was a pair programming project where we received an existing codebase that wasn’t completed. We had to come up with our own functions to get the application to work as intended.
+                    </p>
             </div>
-          </span>
+        </div>
+    </section>
 
-
-        </p>
-
-    </div>
-
-
-    <div id="contact">
-        <h3>Contact Information</h3>
-        <p>Email: flynnd297@gmail.com</p>    
+    <!--? About Section -->
+    <section id="about">
+        <div class="container">
+            <h1 class="main-title">About Me</h1>  
+            <p class="text-soft py-1 text-center">
+                Saint Louis, Missouri Native and avid volleyball player.
+            </p>          
+            <p class="text-soft py-1 text-center">
+                If I had to pick my one true passion, it would be learning. I believe that my time in the Marine Corps played a crucial role in this discovery. Being forced to adapt to any situation and overcome the odds led me to a love of constantly learning new things. Ultimately this is what led me to fall in love with programming, programming languages, and the subsequent technologies. These technologies are constantly evolving or changing, and I'm eager to learn everything I can about them.
+            <p/>
+            <p class="text-soft py-1 text-center">
+                I have always been a customer-centric person who enjoys crafting a response or answering any questions thrown my way. My passion for programming stems from my love for problem-solving and customer support. I believe that any application's primary goal is to fulfill the customer's need, whether shopping for a product, finding the relevant information on how to make a tomato grow indoors, or any number of problems. I want to be able to help build a product that makes the customer's life easier.
+            </p>
+            <br>
+        </div>
+    </section>
     
-    </div>
-    
-    <script src="scripts/scripts.js"></script>
-    
-    </body>
-    </html>
+    <!--? Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h1 class="main-title">Contact Me Below</h1>
+        </div>
+         <!-- Email Icon -->
+         <div class="box">
+            <a href = "mailto: flynnd297@yahoo.com">
+                <i class="fas fa-envelope fa-6x icon-color"></i>
+            </a>
+            <h3 class="soft-text small-text">Flynnd297@yahoo.com</></h3>
+        </div>
+         <!-- LinkedIn Icon -->
+         <div class="box">
+             <a href="https://www.linkedin.com/in/flynnd297/">
+                <i class="fab fa-linkedin fa-6x icon-color"></i>
+             </a>
+            <h3 class="soft-text small-text">in/flynnd297</></h3>
+        </div>
+        <!-- GitHub Icon -->
+        <div class="box">
+             <a href="https://github.com/DustinFlynn297">
+                <i class="fab fa-github fa-6x icon-color"></i>
+            </a>
+            <h3 class="soft-text small-text">DustinFlynn297</></h3>
+        </div>
+    </section>
+    <div class="clr"></div>
+    <footer class="main-footer">
+        <p class="text-soft">Designed and Built By: Dustin Flynn</p>
+    </footer>
+</body>
+</html>
